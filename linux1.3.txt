@@ -1,0 +1,26 @@
+cat /etc/redhat-release
+
+yum install firewalld
+
+service firewalld start
+service firewalld status
+service firewalld stop/disable
+
+firewall-cmd --add-service=ssh
+firewall-cmd --remove-port=22/tcp
+firewall-cmd --list-services
+firewall-cmd --list-ports
+查询端口号80 是否开启：firewall-cmd --query-port=80/tcp
+
+永久开放80端口号：firewall-cmd --permanent --zone=public --add-port=80/tcp
+
+移除80端口号：firewall-cmd --permanent --zone=public --remove-port=80/tcp
+
+--zone #作用域
+--add-port=80/tcp  #添加端口，格式为：端口/通讯协议
+--permanent   #永久生效，没有此参数重启后失效
+
+查看防火墙状态
+systemctl status firewalld.service
+启动|关闭|重新启动  防火墙
+systemctl [start|stop|restart] firewalld.service 

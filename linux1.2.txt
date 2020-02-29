@@ -1,0 +1,21 @@
+根目录 /
+配置目录/etc
+家目录/home
+用户程序目录/usr
+临时目录/tmp
+ls -al 列表
+rm 删除文件和目录
+rm -r 文件
+rm -rf 文件
+cp 复制
+mv 移动
+pwd 显示路径
+mkdir创建文件夹
+mkdir -p test/test/test
+cd 进入
+touch 创建
+ ls显示文件
+
+vim 编辑文件
+
+i esc ：wq  

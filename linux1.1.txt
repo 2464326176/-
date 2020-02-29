@@ -1,0 +1,22 @@
+﻿service sshd start  
+ps -ef |grep ssh
+ssh-add ~/.ssh/yy  添加私钥匙
+systemctl restart  sshd.service  重新开启
+
+
+软件包管理器
+
+安装软件 yum install xxx
+卸载软件 yum remove xxx
+搜索软件 yum serach xxx
+清理软件 yum clean packages
+列出软件 yum list
+软件信息包 yum info xx
+
+服务器硬件资源信息
+内存 free-m
+硬盘 df-h
+负载 w/top
+cup个数和核数
+cat /proc/cpuinfo
+fdisk
